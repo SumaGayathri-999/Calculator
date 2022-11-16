@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+<link rel="stylesheet" href="./calculator.css">
+<div class="calculator-wrapper">
+  <div class="result-wrapper">
+    <p class="input text-big" id="input"></p>
+    <p class="calculated-result text-small" id="calculated-result"></p>
+  </div>
+  <div class="number-pad-wrapper">
+    <div onclick="onEnterValue('AC')" style="grid-column-start: 1; grid-column-end: 3" >
+      AC
+    </div>
+    <div onclick="onEnterValue('x')" style="grid-column-start: 3; grid-column-end: 5" >
+      <i class="fa-solid fa-delete-left"></i>
+    </div>
+    <div onclick="onEnterValue(7)" class="button">7</div>
+    <div onclick="onEnterValue(8)" class="button">8</div>
+    <div onclick="onEnterValue(9)" class="button">9</div>
+    <div onclick="onEnterValue('÷')" class="operator">&divide;</div>
+
+    <div onclick="onEnterValue(4)"class="button">4</div>
+    <div onclick="onEnterValue(5)" class="button">5</div>
+    <div onclick="onEnterValue(6)" class="button">6</div>
+    <div onclick="onEnterValue('×')" class="operator">×</div>
+
+    <div onclick="onEnterValue(1)" class="button">1</div>
+    <div onclick="onEnterValue(2)" class="button">2</div>
+    <div onclick="onEnterValue(3)" class="button">3</div>
+    <div onclick="onEnterValue('+')" class="operator">+</div>
+
+    <div onclick="onEnterValue(0)">0</div>
+
+    <div onclick="onEnterValue('=')" style="grid-column-start: 2; grid-column-end: 4" >
+      <div class="equalto">=</div>
+    </div>
+    <div onclick="onEnterValue('-')" class="operator">-</div>
+  </div>
+</div>
+<script src="./calculator.js"></script>
+</body>
+</html>

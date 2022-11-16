@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  height:calc(100vh - 1px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  user-select:none;
+}
+.calculator-wrapper {
+  width: 300px;
+  display: block;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  box-shadow:10px 10px 15px #837f78;
+
+}
+
+.result-wrapper {
+  width: 100%;
+  height: 100px;
+  background-color: #212121;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  color: #fff;
+  position: relative;
+}
+.calculated-result {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  margin: 0;
+}
+.text-big {
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.2s linear;
+}
+.text-small {
+  color: rgb(255 255 255 / 70%);
+  font-size: 14px;
+  transition: all 0.2s linear;
+}
+.input {
+  position: absolute;
+  bottom: 35px;
+  right: 20px;
+  margin: 0;
+}
+
+.number-pad-wrapper {
+  display: inline-grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(4, 50px);
+  background-color: #101010;
+  padding: 12px;
+}
+.number-pad-wrapper > div {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 17px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.button{
+  background-color:#747272;
+  border-radius: 1rem;
+  box-shadow:2px 2px 5px  white;
+ 
+}
+.button:active,
+.equalto:active,
+.operator:active
+{
+  transform: scale(0.9);
+}
+.operator {
+  background-color: #212121;
+  border-radius: 50%;
+}
+
+.equalto {
+  background-color: #837f78;
+  border-radius: 3px;
+  width: 61%;
+  height: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+}
